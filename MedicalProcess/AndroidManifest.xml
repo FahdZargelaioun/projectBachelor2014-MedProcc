@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicalprocess"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.medicalprocess.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.SecretaryActivity"
+            android:label="@string/title_activity_secretary" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.AddNewPatientActivity"
+            android:label="@string/title_activity_add_new_patient" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.AddNewConsultation"
+            android:label="@string/title_activity_add_new_consultation" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.AddNewConsultationActivity"
+            android:label="@string/title_activity_add_new_consultation" >
+        </activity>
+        <activity
+            android:name="com.example.medicalprocess.ShowConsultationsActivity"
+            android:label="@string/title_activity_show_consultations" >
+        </activity>
+    </application>
+
+</manifest>
